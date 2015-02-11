@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
         exit(1);
     }
     gettimeofday(&end, NULL);
-    printf("Establishing connection took: %d ms.\n", ((end.tv_sec*1000 + end.tv_usec)-(start.tv_sec*1000 + start.tv_usec)));
+    printf("Establishing connection took: %d ms.\n", ((end.tv_sec*1000 + end.tv_usec/1000)-(start.tv_sec*1000 + start.tv_usec/1000)));
     int count;
     char line[writeonce];
     for (count = 0; count < writeonce; count++) {
@@ -59,8 +59,9 @@ int main(int argc, char** argv) {
         byteswritten += write(sockfd, line, MIN(writeonce, totalwrite-byteswritten));
     }
     gettimeofday(&end, NULL);
-    printf("Time passed writing %d bytes: %d ms.\n", byteswritten, ((end.tv_sec*1000 + end.tv_usec)-(start.tv_sec*1000 + start.tv_usec)));
+    printf("Time passed writing %d bytes: %d ms.\n", byteswritten, ((end.tv_sec*1000 + end.tv_usec/1000)-(start.tv_sec*1000 + start.tv_usec/1000)));
     close(sockfd);
+    sleep(1);
     return (EXIT_SUCCESS);
 }
 

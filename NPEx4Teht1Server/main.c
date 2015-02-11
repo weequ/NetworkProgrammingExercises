@@ -80,12 +80,16 @@ int main(int argc, char** argv) {
             close(sockfd); /* close original socket */
             printf("waiting for the client to send text:\n");
             struct timeval start, end;
-            gettimeofday(&start, NULL);
+            int first = 1;
             while ((n = read(newsockfd, buffer, buffersize)) > 0) {
+                if (first) {
+                    gettimeofday(&start, NULL);
+                    first = 0;
+                }
                 //write(STDOUT_FILENO, buffer, n);
             }
             gettimeofday(&end, NULL);
-            printf("Reading data took: %d ms.\n", ((end.tv_sec*1000 + end.tv_usec)-(start.tv_sec*1000 + start.tv_usec)));
+            printf("Reading data took: %d ms.\n", ((end.tv_sec*1000 + end.tv_usec/1000)-(start.tv_sec*1000 + start.tv_usec/1000)));
             printf("client closed.\n");
             close(newsockfd);
             exit(0);

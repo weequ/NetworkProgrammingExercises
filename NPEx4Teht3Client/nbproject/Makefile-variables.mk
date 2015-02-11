@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=npex4teht1server
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/npex4teht1server
+CND_ARTIFACT_NAME_Debug=npex4teht3client
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/npex4teht3client
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=npex4teht1server.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/npex4teht1server.tar
+CND_PACKAGE_NAME_Debug=npex4teht3client.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/npex4teht3client.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=npex4teht1server
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/npex4teht1server
+CND_ARTIFACT_NAME_Release=npex4teht3client
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/npex4teht3client
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=npex4teht1server.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/npex4teht1server.tar
+CND_PACKAGE_NAME_Release=npex4teht3client.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/npex4teht3client.tar
 #
 # include compiler specific variables
 #
