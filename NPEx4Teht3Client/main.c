@@ -40,7 +40,7 @@ int main(int argc, char**argv)
       exit(1);
    }
 
-   sockfd=socket(AF_INET,SOCK_DGRAM,0);
+   sockfd=socket(AF_INET,SOCK_DGRAM,0);//Create UDP socket
 
    bzero(&servaddr,sizeof(servaddr));
    servaddr.sin_family = AF_INET;

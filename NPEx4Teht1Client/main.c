@@ -31,10 +31,10 @@ int main(int argc, char** argv) {
     }
     int totalwrite = atoi(argv[2]);
     int writeonce = atoi(argv[3]);
-    sockfd=socket(AF_INET,SOCK_STREAM,0);
+    sockfd=socket(AF_INET,SOCK_STREAM,0);//Create TCP socket
 
     bzero(&servaddr,sizeof(servaddr));
-    servaddr.sin_family = AF_INET;
+    servaddr.sin_family = AF_INET;//IPv4 (AF_INET6 for IPv6)
     servaddr.sin_addr.s_addr=inet_addr(argv[1]);
     servaddr.sin_port=htons(50001);
 
